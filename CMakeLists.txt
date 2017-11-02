@@ -26,7 +26,7 @@ IF(NOT CMAKE_SYSTEM_PROCESSOR)
   IF(NOT IOS)
     MESSAGE(WARNING "CMAKE_SYSTEM_PROCESSOR is not defined, automatic configuration may choose suboptimal options")
   ENDIF()
-ELSEIF(NOT CMAKE_SYSTEM_PROCESSOR MATCHES "^(i686|x86_64|armv5te|armv7-a|armv7l|aarch64)$")
+ELSEIF(NOT CMAKE_SYSTEM_PROCESSOR MATCHES "^(i686|x86_64|armv5te|armv7-a|armv7l|aarch64|ppc64le)$")
   MESSAGE(FATAL_ERROR "Unrecognized CMAKE_SYSTEM_PROCESSOR = ${CMAKE_SYSTEM_PROCESSOR}")
 ENDIF()
 
